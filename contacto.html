@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SALCooperativa</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>SALCooperativa</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="conocenos.html">Nuestro equipo</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>CONTÁCTANOS</h2>
+        
+        <form>
+            <h3>Tu información:</h3>
+            
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="nombre">Nombre *</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group half">
+                    <label for="apellidos">Apellidos *</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group half">
+                    <label for="telefono">Número de teléfono *</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                
+                <div class="form-group half">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+            </div>
+            
+            <div class="form-row">
+                <div class="form-group third">
+                    <label for="pais">País *</label>
+                    <select id="pais" name="pais" required>
+                        <option value="">Selecciona un país</option>
+                        <option value="espana">España</option>
+                        <option value="francia">Francia</option>
+                        <option value="portugal">Portugal</option>
+                        <option value="italia">Italia</option>
+                        <option value="alemania">Alemania</option>
+                        <option value="mexico">México</option>
+                        <option value="argentina">Argentina</option>
+                        <option value="colombia">Colombia</option>
+                    </select>
+                </div>
+                
+                <div class="form-group third">
+                    <label for="ciudad">Ciudad *</label>
+                    <select id="ciudad" name="ciudad" required>
+                        <option value="">Selecciona una ciudad</option>
+                    </select>
+                </div>
+                
+                <div class="form-group third">
+                    <label for="codigo-postal">Código Postal *</label>
+                    <input type="text" id="codigo-postal" name="codigo-postal" required>
+                </div>
+            </div>
+            
+            <h3>Asunto:</h3>
+            
+            <div class="form-group">
+                <label for="asunto">Servicio de Interés *</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona un servicio</option>
+                    <optgroup label="Ciberseguridad">
+                        <option value="salsecure">SALSecure - Ciberseguridad Integral</option>
+                        <option value="endpoint">SALSecurity-EndPoint - Protección de Dispositivos</option>
+                        <option value="consultoria-seguridad">Consultoría en Seguridad</option>
+                    </optgroup>
+                    <optgroup label="Administración de Redes">
+                        <option value="lansal">LAN-SAL - Instalaciones de Redes</option>
+                        <option value="redrecurses">RedRecurses - Administración de Redes</option>
+                        <option value="salsla">SAL-SLA - Soporte 24/7</option>
+                    </optgroup>
+                    <optgroup label="Certificados Digitales">
+                        <option value="salssl">SALSSL - Certificados SSL/TLS</option>
+                    </optgroup>
+                    <optgroup label="Inteligencia Artificial">
+                        <option value="salia">salIA - Automatización con IA</option>
+                        <option value="chatbots">Chatbots con IA</option>
+                        <option value="analisis-predictivo">Análisis Predictivo</option>
+                    </optgroup>
+                    <optgroup label="Base de Datos y Sistemas">
+                        <option value="saldb">SALdb - Administración de Bases de Datos</option>
+                        <option value="salcloud">SALCloud - Servidores Cloud</option>
+                        <option value="datarecover">DataRecover - Recuperación de Datos</option>
+                        <option value="desarrollo-web">Desarrollo Web</option>
+                    </optgroup>
+                    <optgroup label="Atención y Marketing">
+                        <option value="atencion-cliente">Atención al Cliente</option>
+                        <option value="telemarketing">Telemarketing</option>
+                        <option value="marketing-digital">Marketing Digital</option>
+                    </optgroup>
+                    <option value="otros">Otros - Consulta General</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="descripcion">Describe tu instancia *</label>
+                <textarea id="descripcion" name="descripcion" rows="6" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="captura">Adjuntar alguna captura</label>
+                <input type="file" id="captura" name="captura" accept="image/*">
+            </div>
+            
+            <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                    <input type="checkbox" id="terminos" name="terminos" required>
+                    <span>Acepto los términos y condiciones *</span>
+                </label>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p class="footer-address">Camí de Vera, s/n, Algirós, 46022 València, Valencia • EDIFICIO 4K</p>
+                <div class="footer-contact">
+                    <p><i class="fas fa-phone"></i> +34 963 173 620</p>
+                    <p><i class="fas fa-envelope"></i> info@telemira.com</p>
+                </div>
+            </div>
+            <div class="footer-links">
+                <span>&copy; 2025 SALCooperativa. Todos los derechos reservados.</span>
+                <span>|</span>
+                <a href="#terminos">Términos y Condiciones</a>
+                <span>|</span>
+                <a href="#politicas">Política de Cookies</a>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        const ciudadesPorPais = {
+            espana: ['Madrid', 'Barcelona', 'Valencia', 'Sevilla', 'Zaragoza', 'Málaga', 'Bilbao'],
+            francia: ['París', 'Marsella', 'Lyon', 'Toulouse', 'Niza', 'Nantes', 'Estrasburgo'],
+            portugal: ['Lisboa', 'Oporto', 'Braga', 'Coímbra', 'Faro', 'Funchal'],
+            italia: ['Roma', 'Milán', 'Nápoles', 'Turín', 'Florencia', 'Venecia', 'Bolonia'],
+            alemania: ['Berlín', 'Múnich', 'Hamburgo', 'Frankfurt', 'Colonia', 'Stuttgart'],
+            mexico: ['Ciudad de México', 'Guadalajara', 'Monterrey', 'Puebla', 'Tijuana', 'Cancún'],
+            argentina: ['Buenos Aires', 'Córdoba', 'Rosario', 'Mendoza', 'La Plata', 'Mar del Plata'],
+            colombia: ['Bogotá', 'Medellín', 'Cali', 'Barranquilla', 'Cartagena', 'Bucaramanga']
+        };
+        
+        document.getElementById('pais').addEventListener('change', function() {
+            const paisSeleccionado = this.value;
+            const ciudadSelect = document.getElementById('ciudad');
+            
+            ciudadSelect.innerHTML = '<option value="">Selecciona una ciudad</option>';
+            
+            if (paisSeleccionado && ciudadesPorPais[paisSeleccionado]) {
+                ciudadesPorPais[paisSeleccionado].forEach(ciudad => {
+                    const option = document.createElement('option');
+                    option.value = ciudad.toLowerCase();
+                    option.textContent = ciudad;
+                    ciudadSelect.appendChild(option);
+                });
+            }
+        });
+    </script>
+</body>
+</html>
